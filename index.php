@@ -27,7 +27,7 @@ $dataMonitoring = mapingdata($monitoring, $leader);
 <body>
     <div class="cont container rounded shadow">
         <div class="d-flex align-items-center justify-content-between mt-5 mb-4">
-            <h1> Project Monitoring</h1>
+            <h1> Online Course</h1>
             <div class="d-flex">
                 <form action="" method="GET" class="d-flex position-relative">
                     <input class="field" type="text" name="keyword" size="27rem" placeholder="search by project or client...">
@@ -44,13 +44,13 @@ $dataMonitoring = mapingdata($monitoring, $leader);
         <table class="table mb-4">
             <thead class="bg-light">
                 <tr>
-                    <th scope="col">PROJECT NAME</th>
-                    <th scope="col">CLIENT</th>
-                    <th scope="col">PROJECT LEADER</th>
-                    <th scope="col">START DATE</th>
-                    <th scope="col">END DATE</th>
+                    <th scope="col">NAMA KURSUS</th>
+                    <th scope="col">PENYEDIA KURSUS</th>
+                    <th scope="col">NAMA PESERTA</th>
+                    <th scope="col">WAKTU MULAI</th>
+                    <th scope="col">WAKTU BERAKHIR</th>
                     <th scope="col">PROGRESS</th>
-                    <th scope="col">ACTION</th>
+                    <th scope="col">AKSI</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,9 +73,9 @@ $dataMonitoring = mapingdata($monitoring, $leader);
                         </td>
                         <td>
                             <div class="h-100 leader d-flex align-items-center">
-                                <!-- <div class="image-con">
+                                <div class="image-con">
                                     <img class="rounded-circle" src="img/<?= $data["profile_picture"] ?>" alt="profile-leader">
-                                </div> -->
+                                </div>
                                 <div class="w-75">
                                     <div class="bolder">
                                         <?= $data["leader_name"] ?>

@@ -29,7 +29,7 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Add New Monitoring Projects</title>
+    <title>Tambahkan Kursus Baru</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,21 +45,21 @@ if (isset($_POST["submit"])) {
 
 <body>
     <div class="con w-50 d-flex flex-column justify-content-center">
-        <h1 class="mt-5 mb-2 p-3 w-100 container-form shadow rounded">Add New Monitoring Projects</h1>
+        <h1 class="mt-5 mb-2 p-3 w-100 container-form shadow rounded">Tambahkan Kursus Baru</h1>
         <form action="" method="post" class="container-form shadow mt-0 rounded d-flex flex-column ">
             <ul>
                 <li>
-                    <label for="project_name">Project Name</label>
+                    <label for="project_name">Nama Kursus</label>
                     <br>
-                    <input class="field" type="text" name="project_name" id="project_name" required placeholder="e.g To-do List">
+                    <input class="field" type="text" name="project_name" id="project_name" required placeholder="e.g Web Developer">
                 </li>
                 <li>
-                    <label for="client_name">Client Name</label>
+                    <label for="client_name">Penyedia Kursus</label>
                     <br>
                     <input class="field" type="text" name="client_name" id="client_name" required placeholder="e.g Bayu Nugraha">
                 </li>
                 <li>
-                    <label for="leader_id">Leader Name</label>
+                    <label for="leader_id">Nama Peserta</label>
                     <select class="field" style="cursor: pointer;" id="leader_id" name="leader_id" required tabindex="1" required>
                         <option selected disabled>Select one</option>
                         <?php foreach ($leader as $lead) : ?>
@@ -69,12 +69,12 @@ if (isset($_POST["submit"])) {
                     </select>
                 </li>
                 <li>
-                    <label for="start_date">Start Date</label>
+                    <label for="start_date">Waktu Mulai</label>
                     <br>
                     <input class="field" type="date" name="start_date" id="start_date" required>
                 </li>
                 <li>
-                    <label for="end_date">End Date</label>
+                    <label for="end_date">Waktu Berakhir</label>
                     <br>
                     <input class="field" type="date" name="end_date" id="end_date" required>
                 </li>
