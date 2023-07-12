@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 18, 2022 at 05:02 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.14
+-- Host: localhost:3306
+-- Generation Time: Jul 12, 2023 at 06:00 AM
+-- Server version: 8.0.30
+-- PHP Version: 8.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,23 +28,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `leader` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `leader_name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `profile_picture` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `leader`
 --
 
 INSERT INTO `leader` (`id`, `leader_name`, `email`, `profile_picture`) VALUES
-(1, 'Indra Setiawan', 'indra.setiawan@gmail.com', 'indraSetiawan.jpg'),
-(2, 'Hilman Syahputra', 'hilman.syah@gmail.com', 'hilmanSyah.jpg'),
-(3, 'Febri Gunawan', 'febri.gunawan@gmail.com', 'febriGun.jpg'),
-(4, 'Handoko Aji', 'handoko.Aji@gmail.com', 'handokoAji.jpg'),
-(5, 'Nirina Aini', 'niraini@gmail.com', 'niraini.jpg'),
-(6, 'Cakra Andi', 'cakrandi@gmail.com', 'cakrandi.jpg');
+(1, 'Bayu Nugraha', 'bayunugraha.bjm@gmail.com', 'satu.jpg'),
+(2, 'Amat Banjar', 'amat@gmail.com', 'dua.jpg'),
+(3, 'Udin Gambut', 'udin.gambut@gmail.com', 'tiga.jpg'),
+(4, 'Anang Baras', 'anang.baras@gmail.com', 'empat.jpg');
 
 -- --------------------------------------------------------
 
@@ -53,24 +51,24 @@ INSERT INTO `leader` (`id`, `leader_name`, `email`, `profile_picture`) VALUES
 --
 
 CREATE TABLE `monitoring` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `project_name` varchar(100) NOT NULL,
   `client_name` varchar(100) NOT NULL,
-  `leader_id` int(11) NOT NULL,
+  `leader_id` int NOT NULL,
   `start_date` date NOT NULL,
   `end_date` date NOT NULL,
   `progress` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `monitoring`
 --
 
 INSERT INTO `monitoring` (`id`, `project_name`, `client_name`, `leader_id`, `start_date`, `end_date`, `progress`) VALUES
-(6, ' Pembuatan SI Keuangan', 'Bakeuda Prov. Kalsel', 1, '2022-01-14', '2022-08-14', 0.35),
-(7, ' Learning Management System', 'Ruang Guru', 2, '2022-01-30', '2022-04-10', 0.5),
-(8, ' SI Pendaftaran Atlet Daerah', 'Dispora Jawa Timur', 3, '2022-02-02', '2022-05-30', 0.8),
-(9, ' Employee Monitoring', 'PT Bina Sarana Sukses', 4, '2021-09-02', '2022-01-15', 1);
+(6, 'Web Developer Specialist', 'DICODING', 1, '2023-07-12', '2023-08-12', 0.21),
+(7, 'Cloud Computing', 'Arkademy', 2, '2023-06-06', '2023-07-06', 0.77),
+(8, 'Android Developer', 'Coding Studio', 3, '2023-05-05', '2023-06-05', 0.8),
+(25, 'Network Cyber Security', 'Hacktiv8', 4, '2023-01-01', '2023-03-01', 0.99);
 
 --
 -- Indexes for dumped tables
@@ -97,13 +95,13 @@ ALTER TABLE `monitoring`
 -- AUTO_INCREMENT for table `leader`
 --
 ALTER TABLE `leader`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `monitoring`
 --
 ALTER TABLE `monitoring`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Constraints for dumped tables
