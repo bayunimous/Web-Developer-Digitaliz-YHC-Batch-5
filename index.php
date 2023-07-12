@@ -30,11 +30,11 @@ $dataMonitoring = mapingdata($monitoring, $leader);
             <h1> Online Course</h1>
             <div class="d-flex">
                 <form action="" method="GET" class="d-flex position-relative">
-                    <input class="field" type="text" name="keyword" size="27rem" placeholder="search by project or client...">
+                    <input class="field" type="text" name="keyword" size="27rem" placeholder="search by online course or penyedia kursus...">
                     <button class="position-absolute cari" name="cari"><img src="img/search.png" alt="search"></button>
                 </form>
                 <div class="mt-2 ms-2">
-                    <a href=" addNewMP.php" class="pt-2 pb-2 ps-3 pe-3 rounded add-new"><span class="me-2 ms-0 p-0 bolder">+</span>Add New Projects</a>
+                    <a href=" addNewMP.php" class="pt-2 pb-2 ps-3 pe-3 rounded add-new"><span class="me-2 ms-0 p-0 bolder">+</span>Tambahkan Online Course Baru</a>
                 </div>
             </div>
 
